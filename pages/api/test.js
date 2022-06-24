@@ -8,7 +8,7 @@ mongoose.connect(user).then((result) =>{
 
 
 
-export default function handler(req, res) {
+export default async function handler(req, res) {
     try{
         let message = await User.create({
              UserID:"EmenikeID2",
